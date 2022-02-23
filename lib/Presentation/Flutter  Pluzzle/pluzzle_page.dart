@@ -40,6 +40,7 @@ class _PluzzlePageState extends State<PluzzlePage> {
   bool stopTimer = false;
   Duration duration = const Duration();
   String? dropDownSelectedLengh;
+  late double _width;
 
   fillSlideObject() async {
     fullImage = await getImage();
@@ -106,6 +107,7 @@ class _PluzzlePageState extends State<PluzzlePage> {
 
   @override
   Widget build(BuildContext context) {
+     _width = min(MediaQuery.of(context).size.width, 450);
     String twoDigit(int n) => n.toString().padLeft(2, "0");
     final minute = twoDigit(duration.inMinutes.remainder(60));
     final second = twoDigit(duration.inSeconds.remainder(60));
@@ -185,7 +187,7 @@ class _PluzzlePageState extends State<PluzzlePage> {
               Container(
                 alignment: Alignment.center,
                 height: 360,
-                width: min(MediaQuery.of(context).size.width, 450),
+                width: _width,
                 margin: const EdgeInsets.all(5),
                 decoration: BoxDecoration(
                   border: Border.all(width: 4, color: AppColors.greyColor),
@@ -229,7 +231,7 @@ class _PluzzlePageState extends State<PluzzlePage> {
                                   border: Border.all(
                                       color: success
                                           ? AppColors.transparentColor
-                                          : AppColors.whiteColor,
+                                          : AppColors.transparentColor,
                                       width: success ? 0 : 2),
                                 ),
                                 child: Stack(

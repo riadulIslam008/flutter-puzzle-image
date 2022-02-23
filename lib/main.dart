@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_pluzzle/Core/app_string.dart';
 import 'package:flutter_pluzzle/Presentation/Home%20Page/home_page.dart';
+import 'package:flutter_pluzzle/Services/hive_db.dart';
 import 'package:flutter_pluzzle/Theme/app_theme.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Hive.initFlutter();
+  Hive.registerAdapter<ImageStore>(ImageStoreAdapter());
+  await Hive.openBox<ImageStore>(AppString.dbName);
   runApp(const MyApp());
 }
 

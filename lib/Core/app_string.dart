@@ -6,4 +6,6 @@ class AppString {
     "9x9",
     "10x10"
   ];
+
+  static const String dbName = "ImageStore";
 }
