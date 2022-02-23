@@ -1,16 +1,15 @@
 # flutter_pluzzle
 
-A new Flutter project.
+<p> Hey Puzzlers!, In these image puzzle, youn can play, easy, medium and hard. And also you can comstomize your hardness as you want.Here is a feature for playinh with your favourite photes from your local storage. </p>
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<h1> Dependencies </h1>
+  <h6>1.Image Picker </h6>
+  <h6>2.Sqflite </h6>
+  <h6>3.Path Provider </h6>
+  
+  <h1> Here is UI  </h1>
+  <img src="https://user-images.githubusercontent.com/73518920/155084967-82f06b12-83e9-41f2-9f21-17d12a79bb8f.png" width="100%"/>
+  <img src="https://user-images.githubusercontent.com/73518920/155085593-797f931c-13d6-4fde-b9be-749cc424c6ec.png" width="100%"/>
+  
