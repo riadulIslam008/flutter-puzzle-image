@@ -6,7 +6,7 @@
 
 <h1> Dependencies </h1>
   <h6>1.Image Picker </h6>
-  <h6>2.Sqflite </h6>
+  <h6>2.Hive </h6>
   <h6>3.Path Provider </h6>
   
   <h1> Here is UI  </h1>
