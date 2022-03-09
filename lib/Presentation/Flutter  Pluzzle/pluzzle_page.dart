@@ -107,7 +107,7 @@ class _PluzzlePageState extends State<PluzzlePage> {
 
   @override
   Widget build(BuildContext context) {
-     _width = min(MediaQuery.of(context).size.width, 450);
+    _width = min(MediaQuery.of(context).size.width, 450);
     String twoDigit(int n) => n.toString().padLeft(2, "0");
     final minute = twoDigit(duration.inMinutes.remainder(60));
     final second = twoDigit(duration.inSeconds.remainder(60));
@@ -117,7 +117,13 @@ class _PluzzlePageState extends State<PluzzlePage> {
         backgroundColor: AppColors.transparentColor,
         elevation: 0,
         centerTitle: true,
-        title: Text("$minute : $second"),
+        title: Row(
+          children: [
+            const Icon(Icons.timer_outlined),
+           const SizedBox(width: 10),
+            Text("$minute : $second"),
+          ],
+        ),
         actions: [
           Padding(
             padding: const EdgeInsets.all(10),
@@ -481,7 +487,7 @@ class _PluzzlePageState extends State<PluzzlePage> {
     process = [];
 
     // 20 * size puzzle shuffle
-    for (var i = 0; i < pluzzleLength * 20; i++) {
+    for (var i = 0; i < pluzzleLength * 10; i++) {
       for (var j = 0; j < pluzzleLength / 2; j++) {
         ObjectsModel slideObjectEmpty = getEmptyObject();
 

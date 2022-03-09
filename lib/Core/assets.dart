@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 class AppAssets {
-  static const String aamirkhan = "assets/aamir_khan.jpg";
-  static const String srk = "assets/srk_image.jpeg";
-  static const String heroAlam = "assets/hero_alom.png";
-  static const String hypnotize1 = "assets/hypnotize1.jpg";
-  static const String hypnotize2 = "assets/hypnotize2.jpg";
-  static const String hypnotize3 = "assets/hypnotize3.jpeg";
-  static const String cartoonImage1 = "assets/tom-jerry.jpg";
-  static const String cartoonImage2 = "assets/oggy.jpeg";
-  static const String cartoonImage3 = "assets/motu-patlu.jpg";
+  static const String aamirkhan = "assets/aamir_khan.webp";
+  static const String srk = "assets/srk_image.webp";
+  static const String heroAlam = "assets/hero_alom.webp";
+  static const String hypnotize1 = "assets/hypnotize1.webp";
+  static const String hypnotize2 = "assets/hypnotize2.webp";
+  static const String hypnotize3 = "assets/hypnotize3.webp";
+  static const String cartoonImage1 = "assets/tom-jerry.webp";
+  static const String cartoonImage2 = "assets/oggy.webp";
+  static const String cartoonImage3 = "assets/motu-patlu.webp";
 
   static const heroImageAssets = [
     aamirkhan,
